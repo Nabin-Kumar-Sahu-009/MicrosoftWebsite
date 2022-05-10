@@ -1,0 +1,22 @@
+Steps of Command to upload your project to GitHub
+---------------------------------------------------------------
+
+-touch .gitignore (for create a empty file)
+-git config --global user.name Nabin
+-git config --global user.email sahunabin103@gmail.com
+-git init
+-git add .
+-git commit -m "Initial Commit"
+-git status  #Just to see
+-ssh -keygen -t rsa -b 4096 -C "sahunabin103@gmail.com" (copy from github.com how to generate a ssh key)
+-tail/cat <path to id_rsa.pub> (press enter enter..)  #add this key to  your GitHub account
+-git remote add origin <ssh url.git> (in the github account)
+-git push origin master
+
+
+Steps of Command to update your project in GitHub
+---------------------------------------------------------------
+-git status
+-git add .
+-git commit -m "Added Cheatsheet"
+-git push origin master
